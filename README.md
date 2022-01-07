@@ -1,0 +1,2 @@
+# My_Google_Authenticator_API
+一个纯html实现的 GoogleAuthenticator API
