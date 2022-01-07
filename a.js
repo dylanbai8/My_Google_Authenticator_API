@@ -145,8 +145,8 @@ function refresh() {
     }
 
     // 计算OTPAuth URL和相关的二维码
-    var h='https://www.google.com/chart?chs=200x200&chld=M|0&'+
-      'cht=qr&chl=otpauth://totp/'+encodeURI(label)+'%3Fsecret%3D'+k;
+    var h='https://api.qrserver.com/v1/create-qr-code/?size=155x155'+
+      '&data=otpauth://totp/'+encodeURI(label)+'%3Fsecret%3D'+k;
     var a=document.getElementById('authurl')
     a.innerHTML='otpauth://totp/'+label+'?secret='+k;
     a.href=h;
