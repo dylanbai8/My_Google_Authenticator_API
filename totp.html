@@ -1,0 +1,40 @@
+<!-- 使用教程：
+
+totp.html?secret=xxxxxxxxxx&label=MyGoogleAuthenticator
+
+totp.html?secret=xxxxxxxxxx&search=888888
+
+
+-->
+
+<html>
+<head>
+<meta charset="UTF-8"/>
+<script src="https://utc-time.appspot.com"></script>
+<script src="a.js"></script>
+</head>
+<body onload="setInterval(refresh, 100)">
+
+<p><span id="inlabel"></span></p> <!-- 显示标签 -->
+<p><span id="totp"></span></p> <!-- 显示当前验证码 -->
+
+<p><span id="intotp"></span></p> <!-- 显示传入值验证码 -->
+<p><span id="searchresult"></span></p> <!-- 显示传入值对比检测结果 -->
+
+<p><span id="timeskew"></span></p> <!-- 验证本地时间是否正确并给出提示 -->
+<p><a id="aqr"><img id="qr"></a></p> <!-- GoogleAuthenticator二维码 -->
+
+
+<!-- 以下是隐藏内容 需要时可开启（删除对应标签的隐藏属性） -->
+
+<p><a id="authurl" style="display:none"></a></p> <!-- 显示验证url otpauth://totp/?secret= -->
+
+<p><span id="epoch" style="display:none"></span></p> <!-- 当前时间(U格式) -->
+<p><input id="overrideepoch" type="hidden"/></p> <!-- 自定义当前时间 -->
+
+<p><span id="ts" style="display:none"></span></p> <!-- 时间戳 -->
+<p><input id="override" type="hidden"/></p> <!-- 自定义时间戳 -->
+
+</body>
+</html>
+
