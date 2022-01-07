@@ -169,4 +169,4 @@ function refresh() {
   }
 }
 
-// https://gitee.com/firest/authenticator
+// https://github.com/google/google-authenticator-libpam

@@ -1,8 +1,10 @@
 <!-- 使用教程：
 
-totp.html?secret=xxxxxxxxxx&label=MyGoogleAuthenticator
+https://dylanbai8.github.io/My_Google_Authenticator_API/totp.html
 
-totp.html?secret=xxxxxxxxxx&search=888888
+totp.html?secret=xxxxxxxxxxxxxxxx&label=天王盖地虎
+
+totp.html?secret=xxxxxxxxxxxxxxxx&search=888888
 
 
 -->
@@ -10,7 +12,7 @@ totp.html?secret=xxxxxxxxxx&search=888888
 <html>
 <head>
 <meta charset="UTF-8"/>
-<script src="https://utc-time.appspot.com"></script>
+<!-- <script src="https://utc-time.appspot.com"></script> --> <!-- 用于校验时间 国内不可用 -->
 <script src="a.js"></script>
 </head>
 <body onload="setInterval(refresh, 100)">
@@ -21,8 +23,8 @@ totp.html?secret=xxxxxxxxxx&search=888888
 <p><span id="intotp"></span></p> <!-- 显示传入值验证码 -->
 <p><span id="searchresult"></span></p> <!-- 显示传入值对比检测结果 -->
 
-<p><span id="timeskew"></span></p> <!-- 验证本地时间是否正确并给出提示 -->
-<p><a id="aqr"><img id="qr"></a></p> <!-- GoogleAuthenticator二维码 -->
+<p><span id="timeskew" style="display:none"></span></p> <!-- 验证本地时间是否正确并给出提示 国内不可用 -->
+<p><a id="aqr"><img id="qr" style="display:none"></a></p> <!-- GoogleAuthenticator二维码 国内不可用 -->
 
 
 <!-- 以下是隐藏内容 需要时可开启（删除对应标签的隐藏属性） -->
