@@ -20,5 +20,6 @@ totp.html?secret=xxxxxxxxxxxxxxxx&label=天王盖地虎
 totp.html?secret=xxxxxxxxxxxxxxxx&search=888888
 ```
 
-![image](https://user-images.githubusercontent.com/26950227/148516208-ac34456c-c7dc-48a5-b17c-549a60cd94c8.png)
+![image](https://user-images.githubusercontent.com/26950227/148516576-5b56c373-022e-41e2-9b5c-4efe405e9be3.png)
+
 
